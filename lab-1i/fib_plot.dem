@@ -1,0 +1,9 @@
+set term png
+set output "fib.png"
+set grid
+
+set title "Fibonacci I version"
+set ylabel "time(s)"
+set xlabel "number"
+
+plot 'fib.txt' smooth csplines
